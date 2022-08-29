@@ -1,14 +1,31 @@
 import { createStore } from 'vuex'
+import musicListStore from './musicListStore/musicListStore'
+import currentMusicStore from './currentMusicStore/currentMusicStore'
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
+  modules:{
+    musicListStore,
+    currentMusicStore
   }
 })
+
+
+/* const state = {
+}
+const actions = {
+
+}
+const mutations = {
+  
+}
+const getters = {
+
+}
+
+export default {
+  namespaced:true,
+  state,
+  mutations,
+  actions,
+  getters
+}*/
