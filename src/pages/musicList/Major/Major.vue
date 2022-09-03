@@ -81,10 +81,9 @@ export default {
         index = 0
       }
       musicIndex.value = index
-      console.log(musicIndex.value)
       let musicId = songInfo.value[musicIndex.value].id
       currentMusicId.value = musicId
-      getCurrentSong(musicId)
+      getCurrentSong(musicId,musicIndex.value)
     })
 
     let songInfo = computed(() => store.getters['musicListStore/songInfo'])

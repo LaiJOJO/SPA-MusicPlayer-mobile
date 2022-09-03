@@ -27,3 +27,15 @@ export const getMusicDetail = (musicId)=>{
 export const getMusicLyric = (musicId)=>{
   return request({url:`/lyric?id=${musicId}`,method:'GET'})
 }
+// 获取默认搜索关键词
+export const getDefultMusicWords = ()=>{
+  return request({url:'/search/default',method:'GET'})
+}
+// 获取简略热搜关键词
+export const getRecommendMusicWords = ()=>{
+  return request({url:'/search/hot',method:'GET'})
+}
+// 根据关键词搜索歌曲,limit控制一次获取数量
+export const getWordsMusicList = (keyword)=>{
+  return request({url:`/cloudsearch?keywords=${keyword}`,method:'GET'})
+}

@@ -12,6 +12,16 @@ const routes = [
     path: '/musiclist',
     name: 'musicList',
     component: () => import('@/pages/musicList/musicList.vue'),
+  },
+  {
+    path:'/searchmusic',
+    name:'searchmusic',
+    component:()=>import('@/pages/Search/SearchMusic.vue')
+  },
+  {
+    path:'/searchmusiclist',
+    name:'searchmusiclist',
+    component:()=>import('@/pages/Search/SearchMusicList.vue')
   }
 ]
 
